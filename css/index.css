@@ -53,10 +53,26 @@ body {
     min-height: calc(100vh - 19px);
 }
 
-h2 {
-    border-left: 5px solid #78c6e7;
+.content-header {
+    padding-bottom: 5px;
+    display:inline-block;
     border-bottom: 5px solid #78c6e7;
-    padding: 5px;
+    width: 100%;
+}
+
+.content-header::before {
+    content: '';
+    border-left: 5px solid #78c6e7;
+}
+
+h2 {
+    margin-left: 5px;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.news {
+    padding-top: 10px;
 }
 
 .news-date {
