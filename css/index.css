@@ -19,11 +19,12 @@ body {
     text-decoration: none;
     font-size: 16px;
     line-height: 1cm;
+    font-weight: bold;
 }
 
 .topnav #companytitle {
     font-size: 30px !important;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .topnav .compressed-icons {
@@ -49,6 +50,7 @@ body {
 
 .container {
     padding: 2% 18.25% 2% 18.25%;
+    min-height: calc(100vh - 19px);
 }
 
 h2 {
@@ -59,10 +61,15 @@ h2 {
 
 .news-date {
     padding-right: 15px;
+    vertical-align: top;
 }
 
 .news-text {
     display: inline-block;
+}
+
+.news-row {
+    padding-bottom: 5px;
 }
 
 .more-info-anchor {
@@ -86,6 +93,18 @@ h2 {
 
 .row {
     padding-bottom: 8px;
+}
+
+.footer {
+    background-color: #78c6e7;
+    color: #edf5f9;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
@@ -125,11 +144,15 @@ h2 {
 
     /* adjust container padding on smaller screens */
     .container {
-        padding: 2% 5% 2% 5%;
+        padding: 2% 5% 5% 5%;
     }
 
     /* adjust news-text size */
     .news-text {
         width: 60%;
+    }
+
+    .footer {
+        font-size: 12px;
     }
 }
