@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #78c6e7;
+    padding-left: 17.25%;
+    padding-right: 17.25%;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1cm;
+}
+
+.topnav #companytitle {
+    font-size: 30px !important;
+    font-weight: bold;
+}
+
+.topnav .compressed-icons {
+    float: right;
+}
+
+.topnav a:not(#companytitle):hover {
+    color: #363d41;
+    background-color: #edf5f9;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.keyvisual {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+
+}
+
+.container {
+    padding: 2% 18.25% 2% 18.25%;
+}
+
+h2 {
+    border-left: 5px solid #78c6e7;
+    border-bottom: 5px solid #78c6e7;
+    padding: 5px;
+}
+
+.news-date {
+    padding-right: 15px;
+}
+
+.news-text {
+    display: inline-block;
+}
+
+.more-info-anchor {
+    text-decoration: none;
+    color: #78c6e7;
+    border-bottom: 2px solid #78c6e7;
+}
+
+.more-info-icon {
+    color: #78c6e7;
+    text-decoration: none;
+}
+
+.more-info-icon span {
+    padding-right: 10px;
+}
+
+.more-info-div {
+    float: right;
+}
+
+.row {
+    padding-bottom: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    /* remove padding when less than screen is 600px */
+    .topnav {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .topnav a {
+        line-height: 1.6;
+    }
+
+    /* remove all icons except company icon */
+    .topnav a:not(#companytitle) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block !important;
+        line-height: 1.3cm !important;
+    }
+    .topnav .compressed-icons {
+        float: none;
+    }
+
+    /* display compressed icons */
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block!important;
+        text-align: left;
+    }
+
+    /* adjust container padding on smaller screens */
+    .container {
+        padding: 2% 5% 2% 5%;
+    }
+
+    /* adjust news-text size */
+    .news-text {
+        width: 60%;
+    }
+}
